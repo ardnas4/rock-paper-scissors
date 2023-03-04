@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
     <script src="rock-paper-scissors.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
 
-    <div>
+    <p>Do you have what it takes to beat the bot? First player to reach 5 points wins!</p>
+
+    <div id="scoreboard">0     -     0</div>
+
+    <div id="weapon-choice">Choose Your Weapon:</div>
+
+    <div class="choices">
         <button id="rock">Rock</button>
         <button id="paper">Paper</button>
         <button id="scissors">Scissors</button>
     </div>
+
+    <div id="computer-choice"></div>
 
     <div id="result"></div>
 </body>

@@ -1,0 +1,42 @@
+/* h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+} */
+
+* {
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#computer-choice {
+    padding: 1em 1em;
+}
+
+#scoreboard {
+    /* text-align: center; */
+    padding: 1em 1em;
+    font-size: 24px;
+    white-space: pre-wrap;
+}
+
+#weapon-choice {
+    /* text-align: center; */
+    margin: 1em 1em;
+}
+
+#result {
+    margin: 1em 1em;
+}
+
+#winner {
+    margin: 1em 1em;
+}
