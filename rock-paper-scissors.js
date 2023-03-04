@@ -112,7 +112,7 @@ function updateScoreboard() {
 // function that determines the winner 
 function determineWinner() {
     // first, go to the element with the weapon-choice id
-    const element = document.getElementById("weapon-choice");
+    const element = document.getElementById("weapon-choice-text");
 
     // create a div with id "winner"
     const winnerDiv = document.createElement('div');
