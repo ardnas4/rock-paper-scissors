@@ -120,12 +120,13 @@ function determineWinner() {
     // if the player won, set the proper winnerDiv text
     else if (playerScore == 5) {
         result = 'CONGRATULATIONS! YOU WIN! :)';
-        document.getElementById("weapon-choice-text").style.color = result;
+        document.getElementById("weapon-choice-text").style.color = "green";
     }
 
     // if the computer won, set the proper winnerDiv text
     else if (computerScore == 5) {
         result = 'BOOOO! THE COMPUTER WINS! :(';
+        document.getElementById("weapon-choice-text").style.color = "red";
     }
 
     document.getElementById("weapon-choice-text").innerHTML = result;
