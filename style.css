@@ -1,32 +1,72 @@
 * {
     text-align: center;
+    font-family: "Chalkduster", "Comic Sans MS", "Monaco";
+    color: white;
 }
+
+html {
+    background: url(images/chalkboard.jpeg);
+    background-size: cover;
+}
+
+body {
+    padding: 1em 2em;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+#scoreboard {
+    font-size: 80px;
+    white-space: pre-wrap;
+    margin: 40px 0;
+}
+
+#weapon-choice-text{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
 
 .choices {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 50px;
+    margin: 1.5em 1em;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer; 
+    border-radius: 50%;
+    height: 300px;
+    padding: 20px;
+    width: 300px;
+    outline: 2px solid white;
+}
+
+button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button:hover {
+    outline: 2px solid yellow;
 }
 
 #computer-choice {
-    padding: 1em 1em;
-}
-
-#scoreboard {
-    padding: 1em 1em;
-    font-size: 24px;
-    white-space: pre-wrap;
-}
-
-#weapon-choice-text {
-    margin: 1em 1em;
+    padding: 5px 0;
+    font-size: 17px;
 }
 
 #result {
-    margin: 1em 1em;
-}
-
-#winner {
-    margin: 1em 1em;
+    padding: 5px 0;
+    font-size: 20px;
 }

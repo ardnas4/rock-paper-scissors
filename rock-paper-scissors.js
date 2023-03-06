@@ -16,7 +16,7 @@ buttons.forEach((button) => {
         }
 
         // otherwise, get the button id to determine the user's choice
-        let playerSelection = event.target.id;
+        let playerSelection = button.getAttribute("id");
         // get the computer's choice 
         let computerSelection = getComputerChoice();
 
@@ -111,24 +111,23 @@ function updateScoreboard() {
 
 // function that determines the winner 
 function determineWinner() {
-    // first, go to the element with the weapon-choice id
-    const element = document.getElementById("weapon-choice-text");
+    let result;
 
-    // create a div with id "winner"
-    const winnerDiv = document.createElement('div');
-    winnerDiv.id = 'winner';
+    if (playerScore < 5 && computerScore < 5) {
+        return;
+    }
 
     // if the player won, set the proper winnerDiv text
-    if (playerScore == 5) {
-        winnerDiv.textContent = 'Congratulations! You win!';
+    else if (playerScore == 5) {
+        result = 'CONGRATULATIONS! YOU WIN! :)';
+        document.getElementById("weapon-choice-text").style.color = result;
     }
 
     // if the computer won, set the proper winnerDiv text
     else if (computerScore == 5) {
-        winnerDiv.textContent = 'Boooo! The computer wins!';
+        result = 'BOOOO! THE COMPUTER WINS! :(';
     }
 
-    // place the winnerDiv before the weapon-choice element
-    // in other words, the weapon-choice element is AFTER the winnerDiv
-    element.after(winnerDiv);
+    document.getElementById("weapon-choice-text").innerHTML = result;
+    document.getElementById("weapon-choice-text").style.fontSize = "50px"
 }
